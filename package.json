@@ -1,0 +1,33 @@
+{
+  "name": "my-blog",
+  "version": "1.0.0",
+  "description": "Frontend Tech Blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "ECMAScript",
+    "React",
+    "Vue",
+    "Vite"
+  ],
+  "author": "karas",
+  "license": "ISC",
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.75"
+  },
+  "dependencies": {
+    "vue": "^3.3.2"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
+  }
+}
