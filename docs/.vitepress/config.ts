@@ -1,9 +1,8 @@
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
-const base = '/my-blog/'
 export default defineConfig({
-  base,
+  base: '/my-blog/',
   title: "💯 My Blog",
   description: "Frontend Blog",
   lastUpdated: true,

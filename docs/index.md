@@ -3,26 +3,26 @@
 layout: home
 
 hero:
-  name: "My Blog"
-  text: "Frontend Blog"
-  tagline: My great project tagline
+  name: My Blog
+  text: 🎤 IT Tech Blog
+  tagline: EMACScript,  React,  Vue,  Goland
   image:
-    src: /doc.svg
+    src: /blog.svg
     alt: My Blog
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: EMACScript
+      link: /EMACScript/ES2015/introduce
     - theme: alt
-      text: API Examples
+      text: CTRL
       link: /api-examples
 
 features:
-  - title: Feature A
+  - title: 💃 EMACScript
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
+  - title: 🙋 React
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
+  - title: 🏀 Goland
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
