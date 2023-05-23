@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
+const base = '/my-blog/'
 export default defineConfig({
-  base: '/my-blog/',
+  base,
   title: "💯 My Blog",
   description: "Frontend Blog",
   lastUpdated: true,
@@ -17,7 +18,7 @@ export default defineConfig({
     },
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'EMACScript', link: '/EMACScript/ES2015' }
+      { text: 'EMACScript', link: '/EMACScript/ES2015/introduce' }
     ],
 
     sidebar: [
