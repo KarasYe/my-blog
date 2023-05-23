@@ -2,9 +2,15 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/my-blog/',
   title: "💯 My Blog",
   description: "Frontend Blog",
+  lastUpdated: true,
   themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/KarasYe/my-blog/tree/main/docs/:path',
+      text: 'Edit this page on GitHub'
+    },
     // https://vitepress.dev/reference/default-theme-config
     search: {
       provider: 'local'
@@ -25,7 +31,7 @@ export default defineConfig({
           { text: 'ES2018', link: '/EMACScript/ES2018' },
           { text: 'ES2017', link: '/EMACScript/ES2017' },
           { text: 'ES2016', link: '/EMACScript/ES2016' },
-          { 
+          {
             text: 'ES2015',
             collapsed: true,
             items: [
@@ -73,9 +79,8 @@ export default defineConfig({
         ]
       }
     ],
-
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/KarasYe/my-blog' }
     ]
   }
 })

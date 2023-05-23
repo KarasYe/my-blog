@@ -1,7 +1,6 @@
 # .gitignore
 .DS_Store
 node_modules
-dist
 .env.local
 .env.*.local
 npm-debug.log*
@@ -13,7 +12,6 @@ yarn-error.log*
 *.njsproj
 *.sln
 *.sw?
-public/video
 *.zip
 *.7z
 
