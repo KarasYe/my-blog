@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   base: '/my-blog/',
-  title: "💯 My Blog",
+  title: "📔 博客",
   description: "Frontend Blog",
   lastUpdated: true,
   themeConfig: {
@@ -16,10 +16,10 @@ export default defineConfig({
       provider: 'local'
     },
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'EMACScript', link: '/EMACScript/ES2015/introduce' }
+      { text: '首页', link: '/' },
+      { text: 'EMACScript', link: '/EMACScript/ES2015/introduce' },
+      { text: 'Go', link: '/Go/go' }
     ],
-
     sidebar: [
       {
         text: 'EMACScript',
@@ -69,6 +69,50 @@ export default defineConfig({
               { text: 'reference', link: '/EMACScript/ES2015/reference' },
             ]
           },
+        ]
+      },
+      {
+        text: 'TypeScript',
+        items: [
+          { text: '前世今生', link: '/TypeScript/introduce'}
+        ]
+      },
+      {
+        text: 'Go',
+        items: [
+          { text: 'Go', link: '/Go/go'},
+          { text: '切片', link: '/Go/slice'},
+          { text: '函数', link: '/Go/function'},
+          { text: '接口', link: '/Go/interface'},
+          { text: '通道', link: '/Go/channel'},
+          { text: '字典', link: '/Go/map'},
+          { text: '指针', link: '/Go/pointer'},
+          { text: '结构体', link: '/Go/struct'},
+          { text: 'Goroutine', link: '/Go/goroutine'},
+          { text: '错误', link: '/Go/error'},
+          { text: '标准库', link: '/Go/lib'},
+          { text: 'Fiber', link: '/Go/fiber'}
+        ]
+      },
+      {
+        text: 'Git',
+        items: [
+          { text: 'cherry-pick', link: '/Git/cherry-pick'},
+          { text: 'stash', link: '/Git/stash'},
+          { text: 'revert', link: '/Git/revert'}
+        ]
+      },
+      {
+        text: '学习资料',
+        items: [
+          { text: '30-Days-Of-JavaScrip', link: 'https://github.com/Asabeneh/30-Days-Of-JavaScript'}
+        ]
+      },
+      {
+        text: 'Why',
+        items: [
+          { text: '相对论', link: 'Why/相对论' },
+          { text: '量子力学', link: 'Why/量子力学' }
         ]
       },
       {
