@@ -20,7 +20,7 @@ pnpm install
 - **Run：**
 
 ```text
-pnpm docs:dev
+pnpm run docs:dev
 ```
 
 ## 目录 📚

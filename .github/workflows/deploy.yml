@@ -19,7 +19,7 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
         with:
-          node-version: 'lts/*'
+          node-version: "lts/*"
       # 使用 pnpm 作为包管理器
       - name: Install pnpm
         uses: pnpm/action-setup@v2
@@ -42,15 +42,15 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Install frontend dependencies
-        # If you don't have `beforeBuildCommand` configured you may want to build your frontend here too.
-        run: pnpm install # Change this to npm, yarn or pnpm.
-      - name: Build
-        run: pnpm run docs:build
+      # - name: Install frontend dependencies
+      # If you don't have `beforeBuildCommand` configured you may want to build your frontend here too.
+      # run: pnpm install # Change this to npm, yarn or pnpm.
+      # - name: Build
+      #   run: pnpm run docs:build
       - uses: actions/configure-pages@v2
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: docs/.vitepress/dist
+          path: docs/.vitepress/deploy
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v1
